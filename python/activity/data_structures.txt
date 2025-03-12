@@ -1,0 +1,156 @@
+Practice 1
+
+information = ["Priyansh", "Kakani",23,5.34]
+print(type(infomation))
+print(infomation)
+
+Practice 2
+
+list_of_strings = ["Kate", "Jennifer", "Mike"]
+list_of_strings.extend(["Priyansh","Kakani"])
+# Do not change the following code
+test = len(list_of_strings) == 5  # Check that the size of the list is equal to 5
+print(list_of_strings)
+
+Practice 3a
+
+list_of_strings = ["Kate", "Jennifer", "Mike"]
+person_1 = list_of_strings[0]  # Access the first element of the list
+print(person_1)
+
+person_2 = list_of_strings[1]  # Access the second element of the list
+print(person_2)
+
+person_3 = list_of_strings[2]  # Access the third (and last) element of the list
+print(person_3)
+
+Practice 3b
+
+# Prompt the user for their name in the format: "lastname, firstname"
+name_input = input("Please enter your name in the format 'lastname, firstname': ")
+
+# Use the split function to separate the names by the comma
+last_name, first_name = name_input.split(",")
+
+# Capitalize the first letter of each name and make the rest lowercase
+first_name = first_name.capitalize()
+last_name = last_name.capitalize()
+
+# Display the first name with a feedback message
+print(f"Your first name is: {first_name}")
+
+# Display the last name with a feedback message
+print(f"Your last name is: {last_name}")
+
+Practice 4
+
+# Do not change the first line
+info = ["John", "Smith", "123 East Main Street", "Boston", "Junior Software Developer"]
+
+# Change the index values in the output statements
+print("First name: " + info[-5])
+print("Last name: " + info[-4])
+print("Address: " + info[-3])
+print("City: " + info[-2])
+print("Profession: " + info[-1])
+
+
+Practice 5a
+
+list_of_names = ["John", "Mike", "Serena", "Jennifer", "Abby", "Lisa"]
+print(list_of_names)
+
+team_1 = list_of_names[:2]  # Retrieve the first two elements
+print("The first team is:")
+print(team_1)
+
+team_2 = list_of_names[2:4]  # Retrieve the middle two elements
+print("The second team is:")
+print(team_2)
+
+team_3 = list_of_names[-2:]  # Retrieve the last two elements
+print("The third team is:")
+print(team_3)
+
+
+Practice 5b
+
+states = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
+          "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD",
+          "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
+          "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
+          "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
+
+# Create a list of states starting with M
+states_m = [state for state in states if state.startswith('M')]
+
+# Create a list of states starting with W
+states_w = [state for state in states if state.startswith('W')]
+
+# Create a list of states starting with V
+states_v = [state for state in states if state.startswith('V')]
+
+# Print the lists
+print("States starting with M:", states_m)
+print("States starting with W:", states_w)
+print("States starting with V:", states_v)
+
+
+Practice 6
+
+info = [] 
+info.append("Priyansh")
+print(info)
+info.append("Kakani")
+print(info)
+info.append("23")
+print(info)
+info.append("5.43")
+print(info)
+
+Practice 7
+
+info = ["John", "Smith", "Boston", "Junior Software Developer"]
+
+# Insert the address at index 2
+info.insert(2, "123 Maple Street")
+
+# This code should be executed last
+print("First name: " + info[0])
+print("Last name: " + info[1])
+print("Address: " + info[2])
+print("City: " + info[3])
+print("Profession: " + info[4])
+
+
+Practice 8
+
+input_list = ["Haythem", "Mike", 1, "Layla", "Livia", "Layla", 2, 1, 2, 3, "Mike", "Jesse", "Haythem"]
+
+# Create a new list to store unique values
+unique_list = []
+
+# Iterate through the original list
+for item in input_list:
+    if item not in unique_list:  # If item is not already in unique_list
+        unique_list.append(item)  # Add it to the unique list
+
+print(unique_list)
+
+
+Practice 9
+
+list_1 = [1, -1, 4, 6]
+list_2 = [0, 1, 67, -98]
+list_3 = [45, 65, 2, -54, -434]
+
+# Concatenate the three lists
+combined_list = list_1 + list_2 + list_3
+
+# Loop through the combined list and remove negative numbers
+for item in combined_list[:]:  # Create a copy to avoid modification issues while iterating
+    if item < 0:
+        combined_list.remove(item)
+
+print(combined_list)
+
