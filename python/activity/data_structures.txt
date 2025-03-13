@@ -154,3 +154,45 @@ for item in combined_list[:]:  # Create a copy to avoid modification issues whil
 
 print(combined_list)
 
+Practice 1
+
+info = ["John", "Smith", "123 East Main Street", "Boston", "Junior Software Developer"]
+for i in info:
+    print(i)
+
+
+Practice 2
+
+info = ("John", "Smith", "123 East Main Street", "Boston", "Junior Software Developer")
+for i in info:
+    print(i)
+
+Practice 3
+
+name = "Patrick"
+for char in name:
+    print(char.upper())
+
+
+Practice 4
+
+for i in range(1,21,1):
+    print(f"square of {i} is :",i*i)
+
+
+Practice 5
+
+for i in range(0,101,2):
+    print(i)
+
+
+Practice 6
+
+
+
+
+
+Practice 7
+Practice 8
+Practice 1
+Practice 1
